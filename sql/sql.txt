@@ -1,0 +1,16 @@
+CREATE DATABASE expedienteMedico;
+USE expedienteMedico;
+CREATE TABLE `expedientemedico`.`t_personas` ( `nombre` VARCHAR(255) NOT NULL , 
+`apellido_paterno` VARCHAR(255) NOT NULL , 
+`apellido_materno` VARCHAR(255) NOT NULL , 
+`telefono` BIGINT NOT NULL , `email` VARCHAR(255) NOT NULL , 
+`fecha_de_nacimiento` DATE NOT NULL , `sexo` VARCHAR(10) NOT NULL , 
+`nacionalidad` VARCHAR(255) NOT NULL ) ENGINE = InnoDB;
+INSERT INTO `t_personas` 
+(`nombre`, `apellido_paterno`, `apellido_materno`, `telefono`, `email`, `fecha_de_nacimiento`, `sexo`, `nacionalidad`) 
+VALUES 
+('pepe', 'pecas', 'pica', '54237908', 'pepe@g.com', '93-03-12', 'Masculino', 'colombiana'), 
+('juan', 'perez', 'gomez', '5534092817', 'juan@h.com', '85-09-12', 'masculino', 'mexicana'), 
+('miguel', 'posada', 'ibañez', '5673240918', 'posi@g.com', '99-09-17', 'masculino', 'mexicana'), 
+('pedro', 'robles', 'islas', '5545760912', 'islas@h.com', '89-09-15', 'masculino', 'mexicana'), 
+('marco', 'perez', 'rodriguez', '5545356036', 'marco@g.com', '98-05-15', 'maculino', 'mexicana');
